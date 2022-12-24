@@ -13,30 +13,30 @@
     <script src="script.js" type="module"></script>
 </head>
 
-<body>
-    <nav class="navbar navbar-light " style="font-size: 25px; font-family: sans-serif; background-color: whitesmoke;">
-        Text Editor Project
-    </nav>
+<body> 
+        <nav class="navbar">
+         TEXT EDITOR 
+         <button class="btn" id="undo" style="align-items: right;">SAVE</button>
+         </nav>
+
     <div id="container">
-        <div class="text_box" style="padding: 60px">
+        <div class="text_box" id="box" style="padding: 60px;">
             Type in the box below
             <br><br>
             <textarea class="form-control" id="comment" style="height: 100%;">
             </textarea>
         </div>
         <div class="text_box" style="overflow-y: scroll">
-            <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+            <span id="temptext" style="width: 100%; text-align: center; font-size: 50">
                 Sequence of operations will be shown here !
             </span>
         </div>
     </div>
 
-    <div>
         <br>
-        <button type="button" class="btn btn-success" id="undo">&nbsp;&nbsp;&nbsp;Undo&nbsp;&nbsp;&nbsp;</button>
+        <button class="btn" id="undo">UNDO</button>
         <br>
-        <button type="button" class="btn btn-danger" id="clear">Clear Box</button>
-    </div>
+        <button class="btn" id="clear">Clear Box</button>
 </body>
 
 </html>
