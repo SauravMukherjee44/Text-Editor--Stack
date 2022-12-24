@@ -20,17 +20,47 @@
 
 <body> 
         <nav class="navbar">
-         TEXT EDITOR 
-         <button class="btn" id="undo" style="align-items: right;">SAVE</button>
+        <div class="center">
+            TEXT EDITOR 
+        </div>
+         
          </nav>
-
+    
     <div id="container">
+       
         <div class="text_box" id="box" style="padding: 60px;">
+            <div class="wrapper">
             Type in the box below
+            
+            
             <br><br>
             <textarea class="form-control" id="comment" style="height: 100%;">
             </textarea>
+            
+        
+        
+        <div class="file-options">
+        <div class="option file-name">
+          <label>File name</label>
+          <input type="text" spellcheck="false" placeholder="Enter file name">
         </div>
+        <div class="option save-as">
+          <label>Save as</label>
+          <div class="select-menu">
+            <select>
+              <option value="text/plain">Text File (.txt)</option>
+              <option value="text/javascript">JS File (.js)</option>
+              <option value="text/html">HTML File (.html)</option>
+              <option value="image/svg+xml">SVG File (.svg)</option>
+              <option value="application/msword">Doc File (.doc)</option>
+              <option value="application/vnd.ms-powerpoint">PPT File (.ppt)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <button class="save-btn" type="button">Save As Text File</button>
+        </div>
+    </div>
         <div class="text_box" style="overflow-y: scroll">
             <span id="temptext" style="width: 100%; text-align: center; font-size: 50">
                 Sequence of operations will be shown here !
